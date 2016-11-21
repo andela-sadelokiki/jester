@@ -1,0 +1,13 @@
+html,
+body,
+.container {
+  height: 100%;
+}
+
+.heading {
+  text-align: center
+}
+
+.search {
+  padding-bottom: 30px !important;
+}

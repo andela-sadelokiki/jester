@@ -1,0 +1,23 @@
+.container
+  h2.text-center Jokes 
+  p.text-center Buhahaha, laugh away your sorrows 
+.row
+  .col-md-4
+  .input-group.col-md-4.search
+    .input-group-btn
+      button.btn.btn-default.dropdown-toggle(type='button' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Category
+        span.caret
+      ul.dropdown-menu
+        li
+          a(ng-click='getNerdy()') Nerdy
+        li
+          a(ng-click='getExplicit()') Explicit
+        li
+          a(ng-click='chuckNorrisJokes()') Jokes By Norris
+    input.form-control(type='text' placeholder='Search for joke ..' ng-model='searchJoke') 
+  .col-md-4
+.container.jokelist
+  ul.list-group(ng-repeat='ajoke in alljokes | filter: searchJoke')
+    li.list-group-item {{ajoke.joke}}
+
+

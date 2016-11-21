@@ -1,0 +1,17 @@
+{
+  "name": "jokes",
+  "description": "a joke hub",
+  "main": "index.js",
+  "authors": [
+    "susan"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
