@@ -11,14 +11,6 @@ angular.module('Jokers')
     };
     $scope.getAllJokes();
 
-    // $scope.getCategories = function() {
-    //   JokeService.getJokeCategories().then(function(res) {
-    //     console.log(res.data, 'categories');
-    //     $scope.categories = res.data.value;
-    //   }, function(err) {})
-    // };
-    // $scope.getCategories();
-
     $scope.getNerdy = function() {
       JokeService.getNerdyJokes().then(function(res) {
         console.log(res.data, 'nerdyjokes');
